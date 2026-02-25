@@ -1,0 +1,176 @@
+body {
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#0d0d0d;
+    color:white;
+}
+
+/* Conteneur principal pour centrer tout le contenu */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight:700;
+    font-size:22px;
+    color:#b68d40;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#b68d40;
+}
+
+/* Sections */
+.section {
+    padding:80px 0;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    padding:120px 0;
+}
+
+.hero span {
+    color:#b68d40;
+}
+
+/* Boutons */
+.btn {
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:linear-gradient(45deg,#b68d40,#e6c67a);
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.btn:hover {
+    transform:scale(1.05);
+    box-shadow:0 0 15px #b68d40;
+}
+
+/* Grids et Cards */
+.grid {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:40px;
+}
+
+.card {
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    width:260px;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #b68d40;
+}
+
+.price {
+    font-size:30px;
+    color:#b68d40;
+    margin:15px 0;
+}
+
+/* Formulaire */
+form {
+    display:flex;
+    flex-direction:column;
+    max-width:400px;
+    margin:0 auto;
+}
+
+input, textarea {
+    margin:10px 0;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#1a1a1a;
+    color:white;
+}
+
+textarea {
+    resize:none;
+}
+
+/* Footer */
+footer {
+    padding:20px;
+    text-align:center;
+    background:#000;
+}
+
+/* ========================= */
+/* Responsivité */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        margin: 5px 10px;
+        display: inline-block;
+    }
+    .section {
+        padding: 50px 10px;
+    }
+    .grid {
+        flex-direction: column;
+        gap:20px;
+    }
+    .btn {
+        width:100%;
+        text-align:center;
+        padding:12px 0;
+    }
+    .card {
+        width:100%;
+        padding:20px;
+    }
+    .container {
+        padding:0 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size:24px;
+    }
+    .hero p {
+        font-size:14px;
+    }
+}
